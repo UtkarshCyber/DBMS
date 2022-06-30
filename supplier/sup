@@ -1,0 +1,40 @@
+create database supplier;
+use supplier;
+
+create table supplier(
+s_id int(10)primary key,
+s_name varchar(15),
+address varchar(20)
+);
+
+create table parts(
+p_id int(5)primary key,
+p_name varchar(15),
+colour char(10)
+);
+
+create table catalog(
+s_id int(10),
+p_id int(5),
+cost real,
+foreign key (s_id) references supplier(s_id),
+foreign key (p_id) references parts(p_id)
+);
+
+insert into supplier values(001,'JK_pvt','Bangalore');
+insert into supplier values(002,'AR_pvt','Delhi');
+insert into supplier values(003,'BR_pvt','Rajasthan');
+insert into supplier values(004,'HR_pvt','Noida');
+insert into supplier values(005,'JK_pvt','Hyderabad');
+
+insert into parts values (101,'tank','yellow');
+insert into parts values (102,'wheel','black');
+insert into parts values (103,'body','blue');
+insert into parts values (104,'wires','white');
+insert into parts values (105,'mirrors','black');
+
+insert into catalog values(001,101,2000);
+insert into catalog values(002,102,4000);
+insert into catalog values(003,103,9000);
+insert into catalog values(004,104,3000);
+insert into catalog values(005,105,1500);

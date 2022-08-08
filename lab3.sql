@@ -2,19 +2,20 @@ CREATE TABLE supplier(sid int, sname char(30), address char(30), PRIMARY KEY(sid
 CREATE TABLE parts(pid int, pname char(30), color char(30), PRIMARY KEY(pid));
 CREATE TABLE catalog(sid int, pid int, cost int, foreign key(sid) references supplier(sid), foreign key(pid) references parts(pid));
 
-INSERT INTO supplier VALUES((110,'Ananad pvt ltd','Jamshedpur'),
-                            (123,'Shrinivas hardware','Bangalore'),
-                            (785,'Raghav industries','Vellore'),
-                            (345,'Bablu enterpries','Delhi'),
-                            (876,'Ramnihal motoparts','Bombay'));
+INSERT INTO supplier VALUES(110,'Ananad pvt ltd','Jamshedpur');
+INSERT INTO supplier VALUES(123,'Shrinivas hardware','Bangalore');
+INSERT INTO supplier VALUES(785,'Raghav industries','Vellore');
+INSERT INTO supplier VALUES(345,'Bablu enterpries','Delhi');
+INSERT INTO supplier VALUES(876,'Ramnihal motoparts','Bombay');
 
-INSERT INTO parts VALUES(01,'Screw','red'),
- 	(02,'Bearing','red'),
- 	(03,'Nut','grey'),
-(10,'Bolt','red'),
- 	(27,'panner','grey'),
-(32,'rubbergrip',red),
-(89,'rubbergrip','grey');
+INSERT INTO parts VALUES(01,'Screw','red');
+INSERT INTO parts VALUES(02,'Bearing','red');
+INSERT INTO parts VALUES(03,'Nut','grey');
+INSERT INTO parts VALUES(10,'Bolt','red');
+INSERT INTO parts VALUES(27,'panner','grey');
+INSERT INTO parts VALUES(32,'rubbergrip',red);
+INSERT INTO parts VALUES(89,'rubbergrip','grey');
+
 INSERT INTO catalog VALUES(110,01,23),(110,02,45),(110,03,86),(110,10,73),(110,27,93),(110,32,20),(110,89,120);
 INSERT INTO catalog VALUES(123,01,43),(123,02,18),(123,10,33),(123,32,32);
 INSERT INTO catalog VALUES(785,01,13),(785,32,62);

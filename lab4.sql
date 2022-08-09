@@ -6,42 +6,40 @@ CREATE TABLE faculty(fid int, fname char(30), deptid int, PRIMARY KEY(fid));
 CREATE TABLE enrolled(snum int, name char(30), FOREIGN KEY(snum) REFERENCES student(snum));
 CREATE TABLE class(name char(30), meet time, room char(30), fid int, FOREIGN KEY(fid) REFERENCES faculty(fid));
 
-INSERT INTO student (snum,sname,major,level,age) VALUES (1,'jhon','CS','Sr',19), 
-(2,'smith','CS','Jr',20), 
-(3,'jacob','CV','Sr',20), 
-(4,'tom','CS','Jr',20), 
-(5,'sid','CS','Jr',20), 
-(6,'harry','CS','Sr',21);
+INSERT INTO student (snum,sname,major,level,age)VALUES(1,'jhon','CS','Sr',19), 
+INSERT INTO student (snum,sname,major,level,age)VALUES(2,'smith','CS','Jr',20), 
+INSERT INTO student (snum,sname,major,level,age)VALUES(3,'jacob','CV','Sr',20), 
+INSERT INTO student (snum,sname,major,level,age)VALUES(4,'tom','CS','Jr',20), 
+INSERT INTO student (snum,sname,major,level,age)VALUES(5,'sid','CS','Jr',20), 
+INSERT INTO student (snum,sname,major,level,age)VALUES(6,'harry','CS','Sr',21);
 
-INSERT INTO faculty (fid,fname, deptid) VALUES 
-(11,'Harshith',1000), 
-(12,'Mohan',1000), 
-(13,'Kumar',1001), 
-(14,'Shobha',1002), 
-(15,'Shan',1000);
+INSERT INTO faculty (fid,fname, deptid) VALUES (11,'Harshith',1000), 
+INSERT INTO faculty (fid,fname, deptid) VALUES (12,'Mohan',1000), 
+INSERT INTO faculty (fid,fname, deptid) VALUES (13,'Kumar',1001), 
+INSERT INTO faculty (fid,fname, deptid) VALUES (14,'Shobha',1002), 
+INSERT INTO faculty (fid,fname, deptid) VALUES (15,'Shan',1000);
 
-INSERT INTO class (name,meet,room,fid) VALUES 
-('class1','12:00:00','room1',14), 
-('class10','05:00:00','room128',14), 
-('class2','08:00:00','room2',12), 
-('class3','07:00:00','room3',11), 
-('class4','18:00:00','room4',14), 
-('class5','20:00:00','room3',15), 
-('class6','08:00:00','room2',14), 
-('class7','19:00:00','room3',14);
+INSERT INTO class (name,meet,room,fid) VALUES('class1','12:00:00','room1',14), 
+INSERT INTO class (name,meet,room,fid) VALUES('class10','05:00:00','room128',14), 
+INSERT INTO class (name,meet,room,fid) VALUES('class2','08:00:00','room2',12), 
+INSERT INTO class (name,meet,room,fid) VALUES('class3','07:00:00','room3',11), 
+INSERT INTO class (name,meet,room,fid) VALUES('class4','18:00:00','room4',14), 
+INSERT INTO class (name,meet,room,fid) VALUES('class5','20:00:00','room3',15), 
+INSERT INTO class (name,meet,room,fid) VALUES('class6','08:00:00','room2',14), 
+INSERT INTO class (name,meet,room,fid) VALUES('class7','19:00:00','room3',14);
 
 INSERT INTO enrolled (snum,name) VALUES (1,'class1'), 
-(2,'class1'), 
-(3,'class3'), 
-(4,'class3'), 
-(3,'class3'), 
-(5,'class4'), 
-(1,'class5'), 
-(2,'class5'), 
-(3,'class5'), 
-(4,'class5'), 
-(5,'class5'), 
-(6,'class5');
+INSERT INTO enrolled (snum,name) VALUES(2,'class1'), 
+INSERT INTO enrolled (snum,name) VALUES(3,'class3'), 
+INSERT INTO enrolled (snum,name) VALUES(4,'class3'), 
+INSERT INTO enrolled (snum,name) VALUES(3,'class3'), 
+INSERT INTO enrolled (snum,name) VALUES(5,'class4'), 
+INSERT INTO enrolled (snum,name) VALUES(1,'class5'), 
+INSERT INTO enrolled (snum,name) VALUES(2,'class5'), 
+INSERT INTO enrolled (snum,name) VALUES(3,'class5'), 
+INSERT INTO enrolled (snum,name) VALUES(4,'class5'), 
+INSERT INTO enrolled (snum,name) VALUES(5,'class5'), 
+INSERT INTO enrolled (snum,name) VALUES(6,'class5');
 
 
 

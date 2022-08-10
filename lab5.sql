@@ -1,9 +1,5 @@
 CREATE database airlineflightdb;
 USE airlineflightdb;
-
-CREATE TABLE flights(flno int, frm char(255), too char(255), distance int, departs time, arrives time, price integer);
-
-
 CREATE TABLE flights(flno int, frm char(255), distance int, departs time, arrives time, price integer, PRIMARY KEY(flno));
 CREATE TABLE aircraft(aid int, anmae char(255), cruisingrange int,PRIMARY KEY(aid));
 CREATE TABLE employee(eid int, ename char(255), salary int, PRIMARY KEY(eid));

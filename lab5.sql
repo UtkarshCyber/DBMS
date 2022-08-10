@@ -29,37 +29,32 @@ INSERT INTO aircraft
 (789,'Aircraft02',800), 
 (951,'Aircraft03',1000);
 
-
-INSERT INTO certified 
-(eid,aid) VALUES 
-(1,123), 
-(2,123), 
-(1,302), 
-(5,302), 
-(7,302), 
-(1,306), 
-(2,306), 
-(1,378), 
-(2,378), 
-(4,378), 
-(6,456), 
-(3,456), 
-(5,789), 
-(6,789), 
-(3,951), 
-(1,951), 
-(1,789);
+INSERT INTO certified (eid,aid) VALUES (1,123), 
+INSERT INTO certified (eid,aid) VALUES(2,123), 
+INSERT INTO certified (eid,aid) VALUES(1,302), 
+INSERT INTO certified (eid,aid) VALUES(5,302), 
+INSERT INTO certified (eid,aid) VALUES(7,302), 
+INSERT INTO certified (eid,aid) VALUES(1,306), 
+INSERT INTO certified (eid,aid) VALUES(2,306), 
+INSERT INTO certified (eid,aid) VALUES(1,378), 
+INSERT INTO certified (eid,aid) VALUES(2,378), 
+INSERT INTO certified (eid,aid) VALUES(4,378), 
+INSERT INTO certified (eid,aid) VALUES(6,456), 
+INSERT INTO certified (eid,aid) VALUES(3,456), 
+INSERT INTO certified (eid,aid) VALUES(5,789), 
+INSERT INTO certified (eid,aid) VALUES(6,789), 
+INSERT INTO certified (eid,aid) VALUES(3,951), 
+INSERT INTO certified (eid,aid) VALUES(1,951), 
+INSERT INTO certified (eid,aid) VALUES(1,789);
 
 
-INSERT INTO flights 
-(flno,frm,too,distance,departs,arrives,price) VALUES 
-(1,'Bangalore','Mangalore',360,'10:45:00','12:00:00',10000), 
-(2,'Bangalore','Delhi',5000,'12:15:00','04:30:00',25000), 
-(3,'Bangalore','Mumbai',3500,'02:15:00','05:25:00',30000), 
-(4,'Delhi','Mumbai',4500,'10:15:00','12:05:00',35000), 
-(5,'Delhi','Frankfurt',18000,'07:15:00','05:30:00',90000), 
-(6,'Bangalore','Frankfurt',19500,'10:00:00','07:45:00',95000), 
-(7,'Bangalore','Frankfurt',17000,'12:00:00','06:30:00',99000);
+INSERT INTO flights (flno,frm,too,distance,departs,arrives,price) VALUES (1,'Bangalore','Mangalore',360,'10:45:00','12:00:00',10000), 
+INSERT INTO flights (flno,frm,too,distance,departs,arrives,price) VALUES(2,'Bangalore','Delhi',5000,'12:15:00','04:30:00',25000), 
+INSERT INTO flights (flno,frm,too,distance,departs,arrives,price) VALUES(3,'Bangalore','Mumbai',3500,'02:15:00','05:25:00',30000), 
+INSERT INTO flights (flno,frm,too,distance,departs,arrives,price) VALUES(4,'Delhi','Mumbai',4500,'10:15:00','12:05:00',35000), 
+INSERT INTO flights (flno,frm,too,distance,departs,arrives,price) VALUES(5,'Delhi','Frankfurt',18000,'07:15:00','05:30:00',90000), 
+INSERT INTO flights (flno,frm,too,distance,departs,arrives,price) VALUES(6,'Bangalore','Frankfurt',19500,'10:00:00','07:45:00',95000), 
+INSERT INTO flights (flno,frm,too,distance,departs,arrives,price) VALUES(7,'Bangalore','Frankfurt',17000,'12:00:00','06:30:00',99000);
 
 
 Query 1:  

@@ -9,25 +9,22 @@ CREATE TABLE aircraft(aid int, anmae char(255), cruisingrange int,PRIMARY KEY(ai
 CREATE TABLE employee(eid int, ename char(255), salary int, PRIMARY KEY(eid));
 CREATE TABLE certified(eid int, aid int, FOREIGN KEY (eid) REFERENCES employee(eid), FOREIGN KEY (aid) REFERENCES aircraft(aid));
 
-INSERT INTO employees (eid,ename,salary) VALUES
-        (1,'Ajay',30000),
-        (2,'Ajith',85000),
-        (3,'Arnab',50000),
-        (4,'Harry',45000),
-        (5,'Ron',90000),
-        (6,'Josh',75000),
-        (7,'Ram',100000);
-(8,”Rishabh”,12000);
+INSERT INTO employees (eid,ename,salary) VALUES(1,'Ajay',30000),
+INSERT INTO employees (eid,ename,salary) VALUES(2,'Ajith',85000),
+INSERT INTO employees (eid,ename,salary) VALUES(3,'Arnab',50000),
+INSERT INTO employees (eid,ename,salary) VALUES(4,'Harry',45000),
+INSERT INTO employees (eid,ename,salary) VALUES(5,'Ron',90000),
+INSERT INTO employees (eid,ename,salary) VALUES(6,'Josh',75000),
+INSERT INTO employees (eid,ename,salary) VALUES(7,'Ram',100000);
+INSERT INTO employees (eid,ename,salary) VALUES(8,”Rishabh”,12000);
 
-INSERT INTO aircraft 
-(aid,anmae,cruisingrange) values 
-(123,'Airbus',1000), 
-(302,'Boeing',5000), 
-(306,'Jet01',5000), 
-(378,'Airbus380',8000), 
-(456,'Aircraft',500), 
-(789,'Aircraft02',800), 
-(951,'Aircraft03',1000);
+INSERT INTO aircraft (aid,anmae,cruisingrange) values (123,'Airbus',1000), 
+INSERT INTO aircraft (aid,anmae,cruisingrange) values (302,'Boeing',5000), 
+INSERT INTO aircraft (aid,anmae,cruisingrange) values (306,'Jet01',5000), 
+INSERT INTO aircraft (aid,anmae,cruisingrange) values (378,'Airbus380',8000), 
+INSERT INTO aircraft (aid,anmae,cruisingrange) values (456,'Aircraft',500), 
+INSERT INTO aircraft (aid,anmae,cruisingrange) values (789,'Aircraft02',800), 
+INSERT INTO aircraft (aid,anmae,cruisingrange) values (951,'Aircraft03',1000);
 
 INSERT INTO certified (eid,aid) VALUES (1,123), 
 INSERT INTO certified (eid,aid) VALUES(2,123), 
